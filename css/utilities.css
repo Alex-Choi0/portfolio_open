@@ -7,6 +7,10 @@
   color: #0284d0;
 }
 
+.fa-2x {
+  font-size: 2rem;
+}
+
 /* Button */
 .btn {
   cursor: pointer;
