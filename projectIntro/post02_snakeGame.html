@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- cdnjs.com에서 폰트 정보를 갖고오기 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/utilities.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      #home header {
+        height: 20%;
+      }
+
+      .post {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .post > * {
+        width: 70%;
+      }
+
+      .post p {
+        line-height: 2;
+      }
+
+      .social a {
+        padding: 0 10px;
+      }
+
+      .post img {
+        width: 50%;
+        height: 50%;
+        border-radius: 10px;
+      }
+
+      @media (max-width: 1350px) {
+        #home header .content {
+          visibility: hidden;
+        }
+      }
+    </style>
+    <title>Post One</title>
+  </head>
+  <body id="home">
+    <header class="hero blog">
+      <div id="navbar" class="navbar">
+        <h1 class="logo">
+          <span class="text-primary"
+            ><i class="fas fa-book-open"></i> 최재호</span
+          >포트폴리오
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#myself">My self</a></li>
+            <li><a href="../project.html#project">Project</a></li>
+            <li><a href="../index.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <h1>Snake Game 프로젝트</h1>
+      </div>
+    </header>
+    <main>
+      <section class="post">
+        <h2>Snake Game 설명</h2>
+        <p class="meta">
+          <i class="fas fa-user"></i> Posted by <strong>최재호</strong> | 2021
+          Aug 25
+        </p>
+        <img
+          src="../images/project/NicePng_snake-emoji-png_3228554.png"
+          alt=""
+          srcset=""
+        />
+        <p style="padding-bottom: 10px">
+          프로젝트 기간 : 진행중(약 2주)<br />
+          참여인원 : 풀스택 1명<br />
+          담당 : 풀스택 및 배포<br />
+          프로젝트 소개 : 사용자가 웹상에서 뱀게임을 플레이 하며 점수를 기록할수
+          있습니다. 사용자는 화살표를 이용하여 뱀을 움직일수 있습니다.
+          먹이(노란색)를 먹을때마다 길이가 길어지며 벽이나 몸통에 부딪혔을때는
+          게임오버가 됩니다. 간단하게 id와 password를 입력하고 snake game을
+          진행할수 있으며 최고 점수는 DB에 저장되고 순위도 확인할수 있습니다.
+          <br />
+          현재 게임부분은 완료가 됬고 서버부분을 개발중에 있습니다.
+        </p>
+        <a
+          href="http://snakegame1.s3-website.ap-northeast-2.amazonaws.com/"
+          target="_blank"
+          ><i class="fas fa-file-import" style="padding-right: 10px"></i>Web
+          Site</a
+        >
+      </section>
+    </main>
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a
+          href="https://engineeringshw.blogspot.com/"
+          target="_blank"
+          title="구글 블로그"
+          ><i class="fab fa-blogger fa-2x"></i
+        ></a>
+        <a href="https://github.com/Alex-Choi0" target="_blank" title="깃허브"
+          ><i class="fab fa-github-square fa-2x"></i
+        ></a>
+      </div>
+      <p>Copyright &copy; 2021 - 최재호 포트폴리오</p>
+    </footer>
+  </body>
+</html>

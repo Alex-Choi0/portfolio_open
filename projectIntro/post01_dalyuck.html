@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- cdnjs.com에서 폰트 정보를 갖고오기 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/utilities.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      #home header {
+        height: 20%;
+      }
+
+      .post {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .post > * {
+        width: 70%;
+      }
+
+      .post p {
+        line-height: 2;
+      }
+
+      .social a {
+        padding: 0 10px;
+      }
+
+      .post img {
+        width: 50%;
+        height: 50%;
+        border-radius: 10px;
+      }
+
+      @media (max-width: 1350px) {
+        #home header .content {
+          visibility: hidden;
+        }
+      }
+    </style>
+    <title>Post One</title>
+  </head>
+  <body id="home">
+    <header class="hero blog">
+      <div id="navbar" class="navbar">
+        <h1 class="logo">
+          <span class="text-primary"
+            ><i class="fas fa-book-open"></i> 최재호</span
+          >포트폴리오
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#myself">My self</a></li>
+            <li><a href="../project.html#project">Project</a></li>
+            <li><a href="../index.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <h1>dalyuck 프로젝트</h1>
+      </div>
+    </header>
+    <main>
+      <section class="post">
+        <h2>dalyuck프로젝트 설명</h2>
+        <p class="meta">
+          <i class="fas fa-user"></i> Posted by <strong>최재호</strong> | 2021
+          Aug 30
+        </p>
+        <img src="../images/project/calendar-01.jpg" alt="" srcset="" />
+        <p style="padding-bottom: 10px">
+          프로젝트 기간 : 약 1달<br />
+          참여인원 : 프런트(2명), 백엔드(2명)-백엔드에서 배포(1명)<br />
+          담당 : 백엔드 및 배포<br />
+          프로젝트 소개 : 사용자가 웹상에서 스케줄을 관리할수 있도록 도와주는
+          프로그램입니다. 사용자가 이메일로 회원가입을 하거나 구글 oath으로
+          로그인 할수 있습니다. 테스트로 체험하기를 이용해도 동일한 서비스를
+          받을수 있습니다. 사용자는 일정을 등록할수 있도 다른사람의 일정을
+          받아와서 사용할수 있습니다. 자세한 내용은 아래 'Project Intro'를
+          확인해 주시기 바랍니다.
+        </p>
+        <a href="https://dalyuck.net/main" target="_blank"
+          ><i class="fas fa-file-import" style="padding-right: 10px"></i>Web
+          Site</a
+        >
+        <a
+          href="https://www.notion.so/13-Naezip-dalyuck-8f7deebf45cd42d9951fc4c05f6d3a8f"
+          target="_blank"
+          ><i class="fas fa-network-wired" style="padding-right: 10px"></i
+          >Project Intro</a
+        >
+      </section>
+    </main>
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a
+          href="https://engineeringshw.blogspot.com/"
+          target="_blank"
+          title="구글 블로그"
+          ><i class="fab fa-blogger fa-2x"></i
+        ></a>
+        <a href="https://github.com/Alex-Choi0" target="_blank" title="깃허브"
+          ><i class="fab fa-github-square fa-2x"></i
+        ></a>
+      </div>
+      <p>Copyright &copy; 2021 - 최재호 포트폴리오</p>
+    </footer>
+  </body>
+</html>
