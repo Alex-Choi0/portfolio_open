@@ -10,6 +10,9 @@
 .fa-2x {
   font-size: 2rem;
 }
+.fa-3x {
+  font-size: 3rem;
+}
 
 /* Button */
 .btn {
@@ -154,4 +157,11 @@
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
+}
+
+.container {
+  max-width: 90%;
+  padding: 1rem 1rem;
+  margin: auto;
+  overflow: hidden;
 }
