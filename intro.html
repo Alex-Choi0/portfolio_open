@@ -36,13 +36,19 @@
       .social a {
         padding: 0 10px;
       }
-      .post .social a {
+      .post .social a,
+      .post .other a {
         display: inline-block;
         padding: 5px 5px;
         font-size: 30px;
       }
-      .post .social a:hover {
+      .post .social a:hover,
+      .post .other a:hover {
         color: green;
+      }
+
+      .post .other {
+        text-align: center;
       }
 
       .post img {
@@ -120,31 +126,29 @@
         <!-- Section B: Progress Bars -->
         <section id="about-b" class="bg-dark">
           <div class="container">
-            <h2 class="section-title">
-              Technical Skills
-            </h2>
+            <h2 class="section-title">Technical Skills</h2>
             <div class="bottom-line"></div>
-            <h4>JavaScript : </h4>
+            <h4>JavaScript :</h4>
             <div class="progress" title="70%">
               <div style="width: 70%"></div>
             </div>
-            <h4>TypeScript : </h4>
+            <h4>TypeScript :</h4>
             <div class="progress" title="80%">
               <div style="width: 80%"></div>
             </div>
-            <h4>NodeJS : </h4>
+            <h4>NodeJS :</h4>
             <div class="progress" title="60%">
               <div style="width: 60%"></div>
             </div>
-            <h4>TypeORM : </h4>
+            <h4>TypeORM :</h4>
             <div class="progress" title="65%">
               <div style="width: 65%"></div>
             </div>
-            <h4>HTML & CSS : </h4>
+            <h4>HTML & CSS :</h4>
             <div class="progress" title="70%">
               <div style="width: 70%"></div>
             </div>
-            <h4>React : </h4>
+            <h4>React :</h4>
             <div class="progress" title="50%">
               <div style="width: 50%"></div>
             </div>
@@ -172,31 +176,42 @@
             </div>
           </div>
         </section>
-      <div class="social container">
-        <a
-          href="https://engineeringshw.blogspot.com/"
-          target="_blank"
-          title="구글 블로그"
-          ><i class="fab fa-blogger fa-2x"></i> 구글 블로그</a
-        >
-        <a href="https://github.com/Alex-Choi0" target="_blank" title="깃허브"
-          ><i class="fab fa-github-square fa-2x"></i> 깃허브</a
-        >
-        <a
-          href="https://drive.google.com/file/d/13YpIApRz5xlyXQR0EyM9X5DEl3p4fKz8/view?usp=sharing"
-          target="_blank"
-          title="수료증"
-        >
-          <i class="fas fa-stamp fa-2x"></i> 수료증
-        </a>
-        <a
-          href="https://drive.google.com/file/d/1pXYk6UlKqWHifRjPCXusYSGY8D-1W_Bx/view?usp=sharing"
-          target="_blank"
-          title="페어리뷰"
-        >
-          <i class="fas fa-comments fa-2x"></i> 페어리뷰
-        </a>
-      </div>
+        <br />
+        <div class="social container">
+          <a
+            href="https://engineeringshw.blogspot.com/"
+            target="_blank"
+            title="구글 블로그"
+            ><i class="fab fa-blogger fa-2x"></i> 구글 블로그</a
+          >
+          <a href="https://github.com/Alex-Choi0" target="_blank" title="깃허브"
+            ><i class="fab fa-github-square fa-2x"></i> 깃허브</a
+          >
+          <a
+            href="https://drive.google.com/file/d/1pXYk6UlKqWHifRjPCXusYSGY8D-1W_Bx/view?usp=sharing"
+            target="_blank"
+            title="페어평가"
+          >
+            <i class="fas fa-comments fa-2x"></i> 페어평가
+          </a>
+        </div>
+        <br />
+        <div class="other container">
+          <a
+            href="https://drive.google.com/file/d/13YpIApRz5xlyXQR0EyM9X5DEl3p4fKz8/view?usp=sharing"
+            target="_blank"
+            title="수료증"
+          >
+            <i class="fas fa-stamp fa-2x"></i> 코드스테이츠 수료증
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1KhmG7tZq68hquhgHNTgMp3imZ3T9ggPj/view?usp=sharing"
+            target="_blank"
+            title="HTML&CSS 자격증"
+          >
+            <i class="fas fa-scroll fa-2x"></i> HTML&CSS Certificate
+          </a>
+        </div>
       </section>
     </main>
     <footer class="footer bg-dark">
