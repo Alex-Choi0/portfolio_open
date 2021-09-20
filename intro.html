@@ -76,10 +76,10 @@
         </h1>
         <nav>
           <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./index.html#myself">My self</a></li>
-            <li><a href="./project.html#project">Project</a></li>
-            <li><a href="./index.html#contact">Contact</a></li>
+            <li id="nav_home"><a href="./index.html">Home</a></li>
+            <li id="nav_myself"><a href="#myself">My self</a></li>
+            <li id="nav_project"><a href="./project.html">Project</a></li>
+            <li id="nav_contact"><a href="./index.html#">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -177,15 +177,17 @@
           href="https://engineeringshw.blogspot.com/"
           target="_blank"
           title="구글 블로그"
+          id="social1"
           ><i class="fab fa-blogger fa-2x"></i> 구글 블로그</a
         >
-        <a href="https://github.com/Alex-Choi0" target="_blank" title="깃허브"
+        <a href="https://github.com/Alex-Choi0" target="_blank" title="깃허브" id="social2"
           ><i class="fab fa-github-square fa-2x"></i> 깃허브</a
         >
         <a
           href="https://drive.google.com/file/d/13YpIApRz5xlyXQR0EyM9X5DEl3p4fKz8/view?usp=sharing"
           target="_blank"
           title="수료증"
+          id="social3"
         >
           <i class="fas fa-stamp fa-2x"></i> 수료증
         </a>
@@ -193,6 +195,7 @@
           href="https://drive.google.com/file/d/1pXYk6UlKqWHifRjPCXusYSGY8D-1W_Bx/view?usp=sharing"
           target="_blank"
           title="페어리뷰"
+          id="social4"
         >
           <i class="fas fa-comments fa-2x"></i> 페어리뷰
         </a>
@@ -205,13 +208,17 @@
           href="https://engineeringshw.blogspot.com/"
           target="_blank"
           title="구글 블로그"
+          id="footer1"
           ><i class="fab fa-blogger fa-3x"></i
         ></a>
         <a href="https://github.com/Alex-Choi0" target="_blank" title="깃허브"
+        id="footer2"
           ><i class="fab fa-github-square fa-3x"></i
         ></a>
       </div>
       <p>Copyright &copy; 2021 - 최재호 포트폴리오</p>
     </footer>
   </body>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./intro.js" defer type="module"></script>
 </html>

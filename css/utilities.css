@@ -28,6 +28,19 @@
 .btn:hover {
   opacity: 0.9;
 }
+.btn-submit {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  background: #28a745;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.btn-submit:hover {
+  opacity: 0.9;
+}
 
 .btn-outline {
   background: transparent;
