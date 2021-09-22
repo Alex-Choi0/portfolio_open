@@ -123,6 +123,29 @@ img {
   height: 40vh;
 }
 
+/* intro */
+
+#about-b .progress{
+  overflow: hidden;
+    height: 20px;
+    background: orange;
+    border-radius: 5px;
+    margin-bottom: 0.6rem;
+}
+
+#about-b .progress > div{
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  background: rgb(100, 85, 231);
+}
+
+#contact-b .contact-info{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
 /* Icons */
 .icons {
   padding: 30px;
@@ -206,6 +229,11 @@ img {
   margin: 0 auto 30px;
 }
 
+.social.container{
+  text-align: center;
+  align-items: center;
+}
+
 /* footer */
 
 .footer {
@@ -263,6 +291,12 @@ img {
   .promise .img {
     width: 30vw;
   }
+
+  #contact-b .contact-info{
+    grid-template-columns: 1fr;
+  }
+
+
 
   /* .flex-columns .row {
     flex-direction: column;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <!-- cdnjs.com에서 폰트 정보를 갖고오기 -->
     <link
       rel="stylesheet"
@@ -31,10 +32,10 @@
         </h1>
         <nav>
           <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./index.html#myself">My self</a></li>
-            <li><a href="./index.html#project">Project</a></li>
-            <li><a href="./index.html#contact">Contact</a></li>
+            <li id="nav_home"><a href="./index.html">Home</a></li>
+            <li id="nav_myself"><a href="./index.html#myself">My self</a></li>
+            <li id="nav_project"><a href="./index.html#project">Project</a></li>
+            <li id="nav_contact"><a href="./index.html#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -72,6 +73,7 @@
               <a
                 href="./projectIntro/post01_dalyuck.html"
                 class="btn btn-outline btn-dark"
+                id="click-project1"
               >
                 <i class="fas fa-chevron"></i>Read More
               </a>
@@ -106,6 +108,7 @@
               <a
                 href="./projectIntro/post02_snakeGame.html"
                 class="btn btn-outline btn-light"
+                id="click-project2"
               >
                 <i class="fas fa-chevron"></i>Read More
               </a>
@@ -129,13 +132,14 @@
               </p>
               <p>
                 프로젝트 기간 : 진행중(약 2주)<br />
-                참여인원 : 프런트 2명, 백엔드 1명, 기획 2명<br />
+                참여인원 : 프런트 1명, 백엔드 1명, 기획 2명<br />
                 담당 : 프런트<br />
                 프로젝트 소개 : 비즈니스 정보과 노하우를 웹으로......
               </p>
               <a
                 href="./projectIntro/post03_ImSeller.html"
                 class="btn btn-outline btn-dark"
+                id="click-project3"
               >
                 <i class="fas fa-chevron"></i>Read More
               </a>
@@ -150,10 +154,12 @@
           href="https://engineeringshw.blogspot.com/"
           target="_blank"
           title="구글 블로그"
-          ><i class="fab fa-blogger fa-2x"></i
+          id="footer1"
+          ><i class="fab fa-blogger fa-3x"></i
         ></a>
         <a href="https://github.com/Alex-Choi0" target="_blank" title="깃허브"
-          ><i class="fab fa-github-square fa-2x"></i
+        id="footer2"
+          ><i class="fab fa-github-square fa-3x"></i
         ></a>
       </div>
       <p>Copyright &copy; 2021 - 최재호 포트폴리오</p>
@@ -179,4 +185,6 @@
       };
     </script>
   </body>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./project.js" defer type="module"></script>
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="icon" href="/favicon.ico" />
     <!-- cdnjs.com에서 폰트 정보를 갖고오기 -->
     <link
@@ -27,10 +28,10 @@
         </h1>
         <nav>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#myself">My self</a></li>
-            <li><a href="#project">Project</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li id="nav_home"><a href="#home">Home</a></li>
+            <li id="nav_myself"><a href="#myself">My self</a></li>
+            <li id="nav_project"><a href="#project">Project</a></li>
+            <li id="nav_contact"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -90,7 +91,7 @@
                 Back에서는 Nodejs을 이용하여 서버를 구축하며 이외의 프레임
                 워크는 NestJS을......
               </p>
-              <a href="./intro.html" class="btn btn-outline">
+              <a href="./intro.html" id="click1" class="btn btn-outline">
                 <i class="fas fa-chevron"></i>Read More
               </a>
             </div>
@@ -138,7 +139,7 @@
                 참여인원 : 프런트(2명), 백엔드(2명)-백엔드에서 배포(1명)<br />
                 프로젝트 소개 : 사용자가 웹상에서 스케줄을 관리할수 있도록.....
               </p>
-              <a href="project.html" class="btn btn-outline">
+              <a href="project.html" class="btn btn-outline" id="click2">
                 <i class="fas fa-chevron"></i>Read More
               </a>
             </div>
@@ -156,7 +157,9 @@
           <div class="column">
             <div class="column-2 bg-light">
               <h2>Request Callback</h2>
-              <form action="" class="callback-form">
+              <!-- <form action="" method="post"></form> -->
+              <iframe name="hiddenFrame" class="hide none"></iframe>
+              <form onsubmit="return mySubmitFunction(event)" action="http://localhost:3000/portfolio1" method="POST" class="callback-form" target="hiddenFrame">
                 <div class="form-control">
                   <label for="name">Name</label>
                   <input
@@ -189,7 +192,7 @@
                   name=""
                   id="submit"
                   value="Send"
-                  class="btn"
+                  class="btn-submit"
                 />
               </form>
             </div>
@@ -203,10 +206,12 @@
           href="https://engineeringshw.blogspot.com/"
           target="_blank"
           title="구글 블로그"
-          ><i class="fab fa-blogger fa-2x"></i
+          id="footer1"
+          ><i class="fab fa-blogger fa-3x"></i
         ></a>
         <a href="https://github.com/Alex-Choi0" target="_blank" title="깃허브"
-          ><i class="fab fa-github-square fa-2x"></i
+        id="footer2"
+          ><i class="fab fa-github-square fa-3x"></i
         ></a>
       </div>
       <p>Copyright &copy; 2021 - 최재호 포트폴리오</p>
@@ -220,10 +225,21 @@
     <script>
       const navbar = document.getElementById("navbar");
       let scrolled = false;
-
-      document.getElementById("submit").addEventListener("click", () => {
-        alert("현재 사용할수 없습니다.");
-      });
+      // Request Callback
+      function mySubmitFunction (e){
+        console.log("mySubmitFunction")
+        const email = document.getElementById('email');
+        const phone = document.getElementById('phone');
+        const name = document.getElementById('name');
+        if(email.value === '' && phone.value === '' && name.value === ''){
+          alert("빈 공간을 모두 기입해 주시기 바랍니다");
+          return false;
+        }
+        return true;
+      }
+      // document.getElementById("submit").addEventListener("click", () => {
+      //   alert("현재 사용할수 없습니다.");
+      // });
 
       window.onscroll = function () {
         if (window.pageYOffset > 100) {
@@ -256,5 +272,7 @@
         }
       });
     </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./index.js" defer type='module'></script>
   </body>
 </html>
